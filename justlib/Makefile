@@ -24,7 +24,6 @@ SRC =	ft_is_separator.c		\
 	ft_strjoin.c			\
 	ft_calloc.c			\
 	ft_free_strs.c			\
-	ft_putstr_fd.c			\
 	$(GNL_DIR)/get_next_line.c
 
 #	lst/ft_lstnew.c			\
