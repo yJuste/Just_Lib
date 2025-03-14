@@ -15,14 +15,14 @@
 
 // ----------------------------------PROTOTYPE--------------------------------
 char			**ft_split(const char *s, const char *sep);
-static size_t	ft_count_words(const char *s, const char *sep);
+static int		ft_count_words(const char *s, const char *sep);
 static char		**ft_split_next(char **out, const char *s, const char *sep);
-static char		**ft_split_error(char **out, size_t k);
+static char		**ft_split_error(char **out, int k);
 // ---------------------------------------------------------------------------
 
 char	**ft_split(const char *s, const char *sep)
 {
-	size_t		wc;
+	int			wc;
 	char		**out;
 
 	if (!s)
@@ -36,10 +36,10 @@ char	**ft_split(const char *s, const char *sep)
 	return (ft_split_next(out, s, sep));
 }
 
-static size_t	ft_count_words(const char *s, const char *sep)
+static int	ft_count_words(const char *s, const char *sep)
 {
-	size_t		i;
-	size_t		wc;
+	int		i;
+	int		wc;
 
 	i = 0;
 	wc = 0;
@@ -57,9 +57,9 @@ static size_t	ft_count_words(const char *s, const char *sep)
 
 static char	**ft_split_next(char **out, const char *s, const char *sep)
 {
-	size_t		i;
-	size_t		j;
-	size_t		k;
+	int		i;
+	int		j;
+	int		k;
 
 	i = 0;
 	j = 0;
@@ -83,9 +83,9 @@ static char	**ft_split_next(char **out, const char *s, const char *sep)
 	return (out);
 }
 
-static char	**ft_split_error(char **out, size_t k)
+static char	**ft_split_error(char **out, int k)
 {
-	size_t		f;
+	int		f;
 
 	f = 0;
 	while (f < k)

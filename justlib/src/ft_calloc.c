@@ -15,10 +15,10 @@
 
 // Don't forget to free !
 // Don't forget to put sizof(..) in 'size'.
-void	*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(int count, int size)
 {
-	size_t		i;
-	size_t		total_size;
+	int			i;
+	int			total_size;
 	void		*ptr;
 
 	i = 0;

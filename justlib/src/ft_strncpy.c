@@ -13,9 +13,9 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-char	*ft_strncpy(char *dest, const char *src, size_t n)
+char	*ft_strncpy(char *dest, const char *src, int n)
 {
-	size_t		i;
+	int		i;
 
 	i = 0;
 	while (src[i] && i < n)

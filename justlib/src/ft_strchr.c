@@ -16,7 +16,7 @@
 // This function do strchr and strrchr.
 char	*ft_strchr(const char *s, int c, char strrchr)
 {
-	size_t		i;
+	int		i;
 
 	i = 0;
 	if (strrchr == '0')

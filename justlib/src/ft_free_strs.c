@@ -13,9 +13,9 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-void	ft_free_strs(void **strs, size_t len, char char_or_int)
+void	ft_free_strs(void **strs, int len, char char_or_int)
 {
-	size_t		i;
+	int		i;
 
 	i = 0;
 	if (!strs)
