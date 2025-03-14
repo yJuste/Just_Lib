@@ -54,7 +54,6 @@ int			ft_strncmp(const char *s1, const char *s2, int n);
 char		**ft_split(const char *s, const char *sep);
 char		*ft_strjoin(const char *s1, const char *s2);
 
-
 //	----------- DOUBLE ARRAYS ------------
 
 int			ft_strslen(const char **s);
