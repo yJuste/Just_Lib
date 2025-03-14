@@ -43,10 +43,8 @@ int			ft_is_separator(char c, const char *sep);
 //	-------------- ARRAYS ----------------
 
 int			ft_strlen(const char *s);
-int			ft_strslen(const char **s);
 
 char		*ft_strdup(const char *s);
-char		**ft_strsdup(const char **s);
 char		*ft_strncpy(char *dest, const char *src, int n);
 
 char		*ft_strchr(const char *s, int c, char strrchr);
@@ -56,11 +54,26 @@ int			ft_strncmp(const char *s1, const char *s2, int n);
 char		**ft_split(const char *s, const char *sep);
 char		*ft_strjoin(const char *s1, const char *s2);
 
+
+//	----------- DOUBLE ARRAYS ------------
+
+int			ft_strslen(const char **s);
+
+char		**ft_strsdup(const char **s);
+
+int			ft_look_for(char **arg, char *to_look);
+
+int			ft_interversion(char **arg, int src, int dst, int range);
+void		ft_shift(char **arg, int src, int range);
+
+void		ft_print_args(char *title, char **arg);
+
 //	------------- ALLOCATION -------------
 
 void		*ft_calloc(int count, int size);
 
 void		ft_free_strs(void **strs, int len, char char_or_int);
+void		ft_free(char *s1, char *s2, char *s3, char **strs);
 
 //	------------- CONVERSION -------------
 

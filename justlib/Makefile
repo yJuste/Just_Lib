@@ -13,17 +13,22 @@ GNL_DIR = get_next_line
 # Files
 SRC =	ft_is_separator.c		\
 	ft_strlen.c			\
-	ft_strslen.c			\
 	ft_strdup.c			\
-	ft_strsdup.c			\
 	ft_strncpy.c			\
 	ft_strchr.c			\
 	ft_strcmp.c			\
 	ft_strncmp.c			\
 	ft_split.c			\
 	ft_strjoin.c			\
+	ft_strslen.c			\
+	ft_strsdup.c			\
+	ft_look_for.c			\
+	ft_interversion.c		\
+	ft_shift.c			\
+	ft_print_args.c			\
 	ft_calloc.c			\
 	ft_free_strs.c			\
+	ft_free.c			\
 	$(GNL_DIR)/get_next_line.c
 
 #	lst/ft_lstnew.c			\
