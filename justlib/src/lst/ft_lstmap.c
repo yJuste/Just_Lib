@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 /*   • Applies a function to each node and returns a new string.              */
 /* ************************************************************************** */
-#include "../justlib.h"
+#include "justlib.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

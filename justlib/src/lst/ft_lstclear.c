@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 /*   • Free all chain lists and its content.                                  */
 /* ************************************************************************** */
-#include "../justlib.h"
+#include "justlib.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -9,12 +9,21 @@
 /*   Updated:   by Just'                              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*   • Add a new node at the front.                                           */
+/*   • Copies a str to another one.                                           */
 /* ************************************************************************** */
 #include "justlib.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	*ft_memcpy(void *dst, const void *src, int n)
 {
-	new->next = *lst;
-	*lst = new;
+	int		i;
+
+	i = 0;
+	if (!dst && !src)
+		return (NULL);
+	while (i < n)
+	{
+		((unsigned char *)dst)[i] = ((const unsigned char *)src)[i];
+		i++;
+	}
+	return (dst);
 }

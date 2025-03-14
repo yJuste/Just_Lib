@@ -71,15 +71,23 @@ void		ft_print_args(char *title, char **arg);
 //	------------- ALLOCATION -------------
 
 void		*ft_calloc(int count, int size);
+void		*ft_realloc(void *ptr, int old, int new);
 
 void		ft_free_strs(void **strs, int len, char char_or_int);
 void		ft_free(char *s1, char *s2, char *s3, char **strs);
 
 //	------------- CONVERSION -------------
 
+int			ft_atoi(const char *s);
+char		*ft_itoa(int n);
+
 //	--------------- MATHS ----------------
 
 //	--------------- BASE -----------------
+
+//	-------------- MEMORY ----------------
+
+void		*ft_memcpy(void *dst, const void *src, int n);
 
 //	----------- FILE DESCRIPTOR ----------
 

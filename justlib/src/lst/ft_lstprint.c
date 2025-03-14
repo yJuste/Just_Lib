@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 /*   • Print the list.                                                        */
 /* ************************************************************************** */
-#include "../justlib.h"
+#include "justlib.h"
 
 // can add any other type in the line 6.
 // Be careful, using printf !!!

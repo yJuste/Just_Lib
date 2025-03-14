@@ -13,10 +13,10 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-// ------------------------------PROTOTYPE-------------------------------
-int		ft_interversion(char **arg, int src, int dst, int range);
+// ---------------------------------PROTOTYPE----------------------------------
+int			ft_interversion(char **arg, int src, int dst, int range);
 static void	ft_apply(char **arg, int src, int dst, int range);
-// ----------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
 // On prend l'élément src, on va l'insérer à la position dst sans toucher à
 // l'ordre du tableau. La range permet de spécifier le nombre d'arguments à
@@ -36,8 +36,6 @@ int	ft_interversion(char **arg, int src, int dst, int range)
 		|| range <= 0 || src + range > size)
 		return (1);
 	tmp = ft_calloc(range + 1, sizeof(char *));
-	if (!tmp)
-		return (1);
 	i = 0;
 	while (i < range)
 	{
