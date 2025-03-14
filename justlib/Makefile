@@ -74,7 +74,8 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INC_DIR)
 
 credit:
-	@echo $(YELLOW)".---------------------------------------------------------."
+	@echo $(YELLOW)
+	@echo ".---------------------------------------------------------."
 	@echo "|          🎉  Merci d'utiliser la justlib. 🎉            |"
 	@echo "|                                                         |"
 	@echo "| * Si vous rencontrez des erreurs, veuillez ouvrir       |"
@@ -83,7 +84,8 @@ credit:
 	@echo "|                                                         |"
 	@echo "| EOF:                                                    |"
 	@echo "| Dernière modificatione le 14 Mars 2025 par Juste.       |"
-	@echo ".---------------------------------------------------------."$(RESET)
+	@echo ".---------------------------------------------------------."
+	@echo $(RESET)
 
 # My rules
 rf: re
