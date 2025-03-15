@@ -78,12 +78,12 @@ credit:
 	@echo ".---------------------------------------------------------."
 	@echo "|          🎉  Merci d'utiliser la justlib. 🎉            |"
 	@echo "|                                                         |"
-	@echo "| * Si vous rencontrez des erreurs, veuillez ouvrir       |"
-	@echo "|   une pull request, ceci me permettrait de l'améliorer  |"
+	@echo "| * Si vous rencontrez une erreur, veuillez ouvrir une    |"
+	@echo "|   'pull request', ceci me permettrait de l'améliorer    |"
 	@echo "|   dans le futur, merci. 😁                              |"
 	@echo "|                                                         |"
 	@echo "| EOF:                                                    |"
-	@echo "| Dernière modificatione le 14 Mars 2025 par Juste.       |"
+	@echo "| Dernière modification le 14 Mars 2025 par Juste.        |"
 	@echo ".---------------------------------------------------------."
 	@echo $(RESET)
 

@@ -34,7 +34,7 @@ int	ft_interversion(char **arg, int src, int dst, int range)
 	size = ft_strslen((const char **)arg);
 	if (src < 0 || src >= size || dst < 0 || dst >= size
 		|| range <= 0 || src + range > size)
-		return (1);
+		return (-1);
 	tmp = ft_calloc(range + 1, sizeof(char *));
 	i = 0;
 	while (i < range)
