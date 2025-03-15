@@ -14,6 +14,7 @@ GNL_DIR = get_next_line
 SRC =	ft_is_separator.c		\
 	ft_strlen.c			\
 	ft_strdup.c			\
+	ft_strdel.c			\
 	ft_strncpy.c			\
 	ft_strchr.c			\
 	ft_strcmp.c			\

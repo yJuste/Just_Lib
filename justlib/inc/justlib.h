@@ -45,6 +45,7 @@ int			ft_is_separator(char c, const char *sep);
 int			ft_strlen(const char *s);
 
 char		*ft_strdup(const char *s);
+char		*ft_strdel(char *s, const char *chrs);
 char		*ft_strncpy(char *dest, const char *src, int n);
 
 char		*ft_strchr(const char *s, int c, char strrchr);
