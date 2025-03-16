@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_look_for.c                                      :+:      :+:    :+:   */
+/*   fts_next_i.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -9,29 +9,23 @@
 /*   Updated:   by Just'                              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*   • Look for `to_look` and return its position.                            */
+/*   • Look for `chr` and return its position.                                */
 /* ************************************************************************** */
 #include "justlib.h"
 
-int	ft_look_for(char **arg, char *to_look, int n)
+int	fts_next_i(const char *s, char chr)
 {
-	int		i;
+	static int		i = 0;
 
-	i = 0;
-	if (n == -1)
-		return (-1);
-	while (arg[i])
+	if (!chr)
 	{
-		if (ft_strcmp(arg[i], to_look) == 0)
-		{
-			n--;
-			if (n)
-			{
-				i++;
-				continue ;
-			}
-			return (i);
-		}
+		i = 0;
+		return (-1);
+	}
+	while (s[i])
+	{
+		if (s[i] == chr)
+			return (i++);
 		i++;
 	}
 	return (-1);

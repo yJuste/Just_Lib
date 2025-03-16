@@ -62,6 +62,7 @@ int			ft_strslen(const char **s);
 char		**ft_strsdup(const char **s);
 
 int			ft_look_for(char **arg, char *to_look, int n);
+int			fts_next_i(const char *s, char chr);
 
 int			ft_interversion(char **arg, int src, int dst, int range);
 void		ft_shift(char **arg, int src, int range);
