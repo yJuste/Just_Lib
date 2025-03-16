@@ -13,13 +13,24 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-int	ft_look_for(char **arg, char *to_look, int from)
+int	ft_look_for(char **arg, char *to_look, int n)
 {
-	while (arg[from])
+	int		i;
+
+	i = 0;
+	while (arg[i])
 	{
-		if (ft_strcmp(arg[from], to_look) == 0)
-			return (from);
-		from++;
+		if (ft_strcmp(arg[i], to_look) == 0)
+		{
+			n--;
+			if (n)
+			{
+				i++;
+				continue ;
+			}
+			return (i);
+		}
+		i++;
 	}
 	return (-1);
 }
