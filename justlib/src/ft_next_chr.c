@@ -17,7 +17,7 @@ int	ft_next_chr(const char *s, char chr)
 {
 	static int		i = 0;
 
-	if (!chr)
+	if (!s && !chr)
 	{
 		i = 0;
 		return (-1);
