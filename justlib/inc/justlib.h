@@ -66,6 +66,7 @@ int			ft_next_chr(const char *s, char chr);
 
 int			ft_interversion(char **arg, int src, int dst, int range);
 void		ft_shift(char **arg, int src, int range);
+void		ft_strs_push(char ***arg, char *line);
 
 void		ft_print_args(char *title, char **arg);
 

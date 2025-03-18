@@ -27,6 +27,7 @@ SRC =	ft_is_separator.c		\
 	ft_next_chr.c			\
 	ft_interversion.c		\
 	ft_shift.c			\
+	ft_strs_push.c			\
 	ft_print_args.c			\
 	ft_calloc.c			\
 	ft_realloc.c			\
@@ -64,7 +65,7 @@ $(NAME): $(OBJ)
 	@ar -rcs $(NAME) $(OBJ)
 
 clean:
-	@rm -f $(OBJ)
+	@rm -rf $(OBJ_DIR)
 
 fclean: clean
 	@rm -f $(NAME)
@@ -91,7 +92,7 @@ credit:
 
 # My rules
 rf: re
-	rm -f $(OBJ)
+	rm -rf $(OBJ_DIR)
 	rm -f $(NAME)
 
 s:
