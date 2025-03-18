@@ -61,11 +61,16 @@ int			ft_strslen(const char **s);
 
 char		**ft_strsdup(const char **s);
 
+// look for a the 'n'nth string.
 int			ft_look_for(char **arg, char *to_look, int n);
+// look for the next chr in the string.
 int			ft_next_chr(const char *s, char chr);
 
+// intervert 'range'nth strings at src with the dst.
 int			ft_interversion(char **arg, int src, int dst, int range);
+// deletes 'range'nth strings at src.
 void		ft_shift(char **arg, int src, int range);
+// add string at arg.
 void		ft_strs_push(char ***arg, char *line);
 
 void		ft_print_args(char *title, char **arg);

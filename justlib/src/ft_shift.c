@@ -13,8 +13,8 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-// Fonction qui va décaler tous les arguments à `src` position de droite vers
-// la gauche de `range`.
+// Fonction qui supprimer les arguments src a src + range, et va décaler
+// tous les arguments à `src` position de droite vers la gauche de `range`.
 void	ft_shift(char **arg, int src, int range)
 {
 	int		i;
