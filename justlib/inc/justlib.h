@@ -50,6 +50,8 @@ char		*ft_delchrs(char *s, const char *chrs);
 char		*ft_strncpy(char *dest, const char *src, int n);
 
 char		*ft_strchr(const char *s, int c, char strrchr);
+// look for the next chr in the string.
+int			ft_next_chr(const char *s, const char chr, int n);
 int			ft_strcmp(const char *s1, const char *s2);
 int			ft_strncmp(const char *s1, const char *s2, int n);
 
@@ -63,9 +65,7 @@ int			ft_strslen(const char **s);
 char		**ft_strsdup(const char **s);
 
 // look for a the 'n'nth string.
-int			ft_look_for(char **arg, char *to_look, int n);
-// look for the next chr in the string.
-int			ft_next_chr(const char *s, char chr);
+int			ft_next_str(const char **arg, const char *to_look, int n);
 
 // intervert 'range'nth strings at src with the dst.
 int			ft_interversion(char **arg, int src, int dst, int range);

@@ -13,19 +13,25 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-int	ft_next_chr(const char *s, char chr)
+int	ft_next_chr(const char *s, const char chr, int n)
 {
-	static int		i = 0;
+	int		i;
 
-	if (!s && !chr)
-	{
-		i = 0;
+	i = 0;
+	if (n == -1)
 		return (-1);
-	}
 	while (s[i])
 	{
 		if (s[i] == chr)
-			return (i++);
+		{
+			n--;
+			if (n)
+			{
+				i++;
+				continue ;
+			}
+			return (i);
+		}
 		i++;
 	}
 	return (-1);
