@@ -46,7 +46,7 @@ int			ft_strlen(const char *s);
 
 char		*ft_strdup(const char *s);
 // deletes specified chars from a string.
-void		ft_delchrs(char **s, const char *chrs);
+char		*ft_delchrs(char *s, const char *chrs);
 char		*ft_strncpy(char *dest, const char *src, int n);
 
 char		*ft_strchr(const char *s, int c, char strrchr);

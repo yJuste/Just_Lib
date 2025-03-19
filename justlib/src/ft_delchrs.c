@@ -13,7 +13,7 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-void	ft_delchrs(char **s, const char *chrs)
+char	*ft_delchrs(char *s, const char *chrs)
 {
 	int			i;
 	int			j;
@@ -21,20 +21,20 @@ void	ft_delchrs(char **s, const char *chrs)
 
 	i = 0;
 	j = 0;
-	while (*s[i])
-		if (ft_is_separator(*s[i++], chrs) == 0)
+	while (s[i])
+		if (ft_is_separator(s[i++], chrs) == 0)
 			j++;
 	new = ft_calloc(j + 1, sizeof(char));
 	if (!new)
-		return ;
+		return (NULL);
 	i = 0;
 	j = 0;
-	while (*s[i])
+	while (s[i])
 	{
-		if (ft_is_separator(*s[i], chrs) == 0)
-			new[j++] = *s[i];
+		if (ft_is_separator(s[i], chrs) == 0)
+			new[j++] = s[i];
 		i++;
 	}
-	free(*s);
-	*s = new;
+	free(s);
+	return (new);
 }
