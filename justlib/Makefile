@@ -13,6 +13,7 @@ GNL_DIR = get_next_line
 # Files
 SRC =	ft_is_separator.c		\
 	ft_strlen.c			\
+	ft_count_chr.c			\
 	ft_strdup.c			\
 	ft_strncpy.c			\
 	ft_strchr.c			\

@@ -43,6 +43,7 @@ int			ft_is_separator(char c, const char *sep);
 //	-------------- ARRAYS ----------------
 
 int			ft_strlen(const char *s);
+int			ft_count_chr(const char *s, const char *chrs);
 
 char		*ft_strdup(const char *s);
 // deletes specified chars from a string.
