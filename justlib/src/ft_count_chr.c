@@ -21,7 +21,7 @@ int	ft_count_chr(const char *s, const char *chrs)
 	i = 0;
 	j = 0;
 	while (s[i])
-		if (ft_is_separator(s[i++], chrs) == 0)
+		if (ft_is_separator(s[i++], chrs) == 1)
 			j++;
 	return (j);
 }
