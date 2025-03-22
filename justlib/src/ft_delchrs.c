@@ -23,7 +23,7 @@ char	*ft_delchrs(char *s, const char *chrs)
 	i = 0;
 	j = 0;
 	while (s[i])
-		if (ft_is_separator(s[i++], chrs) == 1)
+		if (ft_is_separator(s[i++], chrs) == 0)
 			j++;
 	new = ft_calloc(j + 1, sizeof(char));
 	if (!new)
@@ -32,7 +32,7 @@ char	*ft_delchrs(char *s, const char *chrs)
 	j = 0;
 	while (s[i])
 	{
-		if (ft_is_separator(s[i], chrs) == 1)
+		if (ft_is_separator(s[i], chrs) == 0)
 			new[j++] = s[i];
 		i++;
 	}
