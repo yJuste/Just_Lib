@@ -13,23 +13,23 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-void	ft_free(char *s1, char *s2, char *s3, char **strs)
+void	ft_free(char **s1, char **s2, char **s3, char ***strs)
 {
-	if (s1)
+	if (s1 && *s1)
 	{
-		free(s1);
-		s1 = NULL;
+		free(*s1);
+		*s1 = NULL;
 	}
-	if (s2)
+	if (s2 && *s2)
 	{
-		free(s2);
-		s2 = NULL;
+		free(*s2);
+		*s2 = NULL;
 	}
-	if (s3)
+	if (s3 && *s3)
 	{
-		free(s3);
-		s3 = NULL;
+		free(*s3);
+		*s3 = NULL;
 	}
-	if (strs)
-		ft_free_strs((void **)strs, 0, 'c');
+	if (strs && *strs)
+		ft_free_array((void ***)strs, 0, 'c');
 }

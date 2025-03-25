@@ -32,7 +32,7 @@ SRC =	ft_is_separator.c		\
 	ft_print_args.c			\
 	ft_calloc.c			\
 	ft_realloc.c			\
-	ft_free_strs.c			\
+	ft_free_array.c			\
 	ft_free.c			\
 	ft_atoi.c			\
 	ft_itoa.c			\

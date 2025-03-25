@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_strs.c                                     :+:      :+:    :+:   */
+/*   ft_free_array.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -13,19 +13,19 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-void	ft_free_strs(void **strs, int len, char char_or_int)
+void	ft_free_array(void ***arr, int len, char char_or_int)
 {
 	int		i;
 
 	i = 0;
-	if (!strs)
+	if (!arr || !*arr)
 		return ;
 	if (char_or_int == 'c')
 	{
-		while (strs[i])
+		while ((*arr)[i])
 		{
-			free(strs[i]);
-			strs[i] = NULL;
+			free((*arr)[i]);
+			(*arr)[i] = NULL;
 			i++;
 		}
 	}
@@ -33,11 +33,11 @@ void	ft_free_strs(void **strs, int len, char char_or_int)
 	{
 		while (i < len)
 		{
-			free(strs[i]);
-			strs[i] = NULL;
+			free((*arr)[i]);
+			(*arr)[i] = NULL;
 			i++;
 		}
 	}
-	free(strs);
-	strs = NULL;
+	free(*arr);
+	*arr = NULL;
 }

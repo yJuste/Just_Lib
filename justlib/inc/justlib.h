@@ -82,8 +82,8 @@ void		ft_print_args(char *title, char **arg);
 void		*ft_calloc(int count, int size);
 void		*ft_realloc(void *ptr, int old, int new);
 
-void		ft_free_strs(void **strs, int len, char char_or_int);
-void		ft_free(char *s1, char *s2, char *s3, char **strs);
+void		ft_free_array(void ***arr, int len, char char_or_int);
+void		ft_free(char **s1, char **s2, char **s3, char ***strs);
 
 //	------------- CONVERSION -------------
 
