@@ -18,7 +18,7 @@ void	ft_free_array(void ***arr, int len, char char_or_int)
 	int		i;
 
 	i = 0;
-	if (!arr || !*arr)
+	if (!arr || !*arr || (char_or_int == 'i' && len == 0))
 		return ;
 	if (char_or_int == 'c')
 	{
