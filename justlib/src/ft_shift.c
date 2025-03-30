@@ -15,7 +15,7 @@
 
 // Fonction qui supprimer les arguments src a src + range, et va décaler
 // tous les arguments à `src` position de droite vers la gauche de `range`.
-void	ft_shift(char **arg, int src, int range)
+char	**ft_shift(char **arg, int src, int range)
 {
 	int		i;
 	int		j;
@@ -39,4 +39,7 @@ void	ft_shift(char **arg, int src, int range)
 		arg[src + i + j] = NULL;
 		j++;
 	}
+	if (!arg[0])
+		arg = NULL;
+	return (arg);
 }

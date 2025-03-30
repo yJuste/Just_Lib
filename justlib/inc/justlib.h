@@ -71,7 +71,7 @@ int			ft_next_str(const char **arg, const char *to_look, int n);
 // intervert 'range'nth strings at src with the dst.
 int			ft_interversion(char **arg, int src, int dst, int range);
 // deletes 'range'nth strings at src.
-void		ft_shift(char **arg, int src, int range);
+char		**ft_shift(char **arg, int src, int range);
 // add string at arg.
 void		ft_strs_push(char ***arg, char *line);
 
