@@ -24,7 +24,7 @@ char	**ft_shift(char **arg, int src, int range)
 	while (i < range && arg[src + i])
 	{
 		if (arg[src + i])
-			free(arg[src + i]);
+			ft_free(&arg[src + i], NULL, NULL, NULL);
 		i++;
 	}
 	i = 0;
