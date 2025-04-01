@@ -20,7 +20,7 @@ char	**ft_strscpy(char **dst, const char **src)
 	i = 0;
 	while (src[i])
 	{
-		ft_strcpy(dst[i], src[i]);
+		dst[i] = ft_strdup((const char *)src[i]);
 		i++;
 	}
 	dst[i] = NULL;
