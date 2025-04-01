@@ -66,6 +66,7 @@ char		*ft_strjoin(const char *s1, const char *s2);
 int			ft_strslen(const char **s);
 
 char		**ft_strsdup(const char **s);
+int			ft_delstrs(char **arg, const char *strs);
 char		**ft_strscpy(char **dst, const char **src);
 
 // look for a the 'n'nth string.

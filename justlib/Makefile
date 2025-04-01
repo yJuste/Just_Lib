@@ -27,6 +27,7 @@ SRC =	ft_is_separator.c		\
 	ft_strjoin.c			\
 	ft_strslen.c			\
 	ft_strsdup.c			\
+	ft_delstrs.c			\
 	ft_strscpy.c			\
 	ft_next_str.c			\
 	ft_interversion.c		\
