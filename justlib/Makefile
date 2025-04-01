@@ -19,6 +19,8 @@ SRC =	ft_is_separator.c		\
 	ft_strcpy.c			\
 	ft_strncpy.c			\
 	ft_strchr.c			\
+	ft_strrchr.c			\
+	ft_next_chr.c			\
 	ft_strcmp.c			\
 	ft_strncmp.c			\
 	ft_split.c			\
@@ -27,7 +29,6 @@ SRC =	ft_is_separator.c		\
 	ft_strsdup.c			\
 	ft_strscpy.c			\
 	ft_next_str.c			\
-	ft_next_chr.c			\
 	ft_interversion.c		\
 	ft_shift.c			\
 	ft_strs_push.c			\
@@ -79,6 +80,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(dir $@)
 	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INC_DIR)
 
+# My rules
 credit:
 	@echo $(YELLOW)
 	@echo ".---------------------------------------------------------."
@@ -89,11 +91,9 @@ credit:
 	@echo "|   dans le futur, merci. 😁                              |"
 	@echo "|                                                         |"
 	@echo "| EOF:                                                    |"
-	@echo "| Dernière modification le 14 Mars 2025 par Juste.        |"
+	@echo "| Dernière modification le 1 Avril 2025 par Juste.        |"
 	@echo ".---------------------------------------------------------."
 	@echo $(RESET)
-
-# My rules
 rf: re
 	rm -rf $(OBJ_DIR)
 	rm -f $(NAME)
@@ -101,4 +101,4 @@ rf: re
 s:
 	ls -lh $(NAME)
 
-.PHONY: all clean fclean re rf s
+.PHONY: all clean fclean re credit rf s

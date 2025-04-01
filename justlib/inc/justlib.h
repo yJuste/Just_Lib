@@ -51,7 +51,8 @@ char		*ft_delchrs(char *s, const char *chrs);
 char		*ft_strcpy(char *dst, const char *src);
 char		*ft_strncpy(char *dst, const char *src, int n);
 
-char		*ft_strchr(const char *s, int c, char strrchr);
+char		*ft_strchr(const char *s, int c);
+char		*ft_strrchr(const char *s, int c);
 // look for the next chr in the string.
 int			ft_next_chr(const char *s, const char chr, int n);
 int			ft_strcmp(const char *s1, const char *s2);

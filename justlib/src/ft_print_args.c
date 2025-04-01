@@ -21,8 +21,8 @@ void	ft_print_args(char *title, char **arg)
 	printf("%s", title);
 	while (arg[i])
 	{
-		printf("arg[%d] = %s\n", i, arg[i]);
+		printf("arg[%d] = %sEOL\n", i, arg[i]);
 		i++;
 	}
-	printf("\n");
+	printf("--- EOF ---\n");
 }

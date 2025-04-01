@@ -13,30 +13,18 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-// This function do strchr and strrchr.
-char	*ft_strchr(const char *s, int c, char strrchr)
+char	*ft_strchr(const char *s, int c)
 {
 	int		i;
 
 	i = 0;
-	if (strrchr == '0')
+	while (s[i])
 	{
-		while (s[i])
-		{
-			if (s[i] == (char)c)
-				return ((char *)(s + i));
-			i++;
-		}
 		if (s[i] == (char)c)
 			return ((char *)(s + i));
+		i++;
 	}
-	else
-	{
-		i = ft_strlen(s);
-		while (s[i] != (char)c && i > 0)
-			i--;
-		if (s[i] == (char) c)
-			return ((char *)s + i);
-	}
+	if (s[i] == (char)c)
+		return ((char *)(s + i));
 	return (NULL);
 }

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -9,18 +9,18 @@
 /*   Updated:   by Just'                              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*   • Calculate the nb of char in a str.                                     */
+/*   • Finds the first occurence of the char from the end of the string.      */
 /* ************************************************************************** */
 #include "justlib.h"
 
-int	ft_strlen(const char *s)
+char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
 
-	i = 0;
-	if (!s)
-		return (0);
-	while (s[i])
-		i++;
-	return (i);
+	i = ft_strlen(s);
+	while (s[i] != (char)c && i > 0)
+		i--;
+	if (s[i] == (char)c)
+		return ((char *)s + i);
+	return (NULL);
 }

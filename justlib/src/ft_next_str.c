@@ -18,7 +18,7 @@ int	ft_next_str(const char **arg, const char *to_look, int n)
 	int		i;
 
 	i = 0;
-	if (n == -1)
+	if (n <= -1)
 		return (-1);
 	while (arg[i])
 	{

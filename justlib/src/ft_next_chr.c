@@ -18,7 +18,7 @@ int	ft_next_chr(const char *s, const char chr, int n)
 	int		i;
 
 	i = 0;
-	if (n == -1)
+	if (n <= -1)
 		return (-1);
 	while (s[i])
 	{
