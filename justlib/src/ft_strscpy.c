@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strscpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -9,25 +9,20 @@
 /*   Updated:   by Just'                              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*   • Copies a str from an another at n bytes.                               */
+/*   • Copies an arr from an another.                                         */
 /* ************************************************************************** */
 #include "justlib.h"
 
-char	*ft_strncpy(char *dst, const char *src, int n)
+char	**ft_strscpy(char **dst, const char **src)
 {
 	int		i;
 
 	i = 0;
-	while (src[i] && i < n)
+	while (src[i])
 	{
-		dst[i] = src[i];
+		ft_strcpy(dst[i], src[i]);
 		i++;
 	}
-	while (i < n)
-	{
-		dst[i] = '\0';
-		i++;
-	}
-	dst[i] = '\0';
+	dst[i] = NULL;
 	return (dst);
 }

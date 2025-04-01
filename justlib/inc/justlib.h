@@ -48,7 +48,8 @@ int			ft_count_chr(const char *s, const char *chrs);
 char		*ft_strdup(const char *s);
 // deletes specified chars from a string.
 char		*ft_delchrs(char *s, const char *chrs);
-char		*ft_strncpy(char *dest, const char *src, int n);
+char		*ft_strcpy(char *dst, const char *src);
+char		*ft_strncpy(char *dst, const char *src, int n);
 
 char		*ft_strchr(const char *s, int c, char strrchr);
 // look for the next chr in the string.
@@ -64,6 +65,7 @@ char		*ft_strjoin(const char *s1, const char *s2);
 int			ft_strslen(const char **s);
 
 char		**ft_strsdup(const char **s);
+char		**ft_strscpy(char **dst, const char **src);
 
 // look for a the 'n'nth string.
 int			ft_next_str(const char **arg, const char *to_look, int n);

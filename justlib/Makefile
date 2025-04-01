@@ -15,9 +15,10 @@ SRC =	ft_is_separator.c		\
 	ft_strlen.c			\
 	ft_count_chr.c			\
 	ft_strdup.c			\
+	ft_delchrs.c			\
+	ft_strcpy.c			\
 	ft_strncpy.c			\
 	ft_strchr.c			\
-	ft_delchrs.c			\
 	ft_strcmp.c			\
 	ft_strncmp.c			\
 	ft_split.c			\
