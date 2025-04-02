@@ -13,7 +13,6 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-// Supprime les tableaux donnés en argument.
 int	ft_delstrs(char **arg, const char *strs)
 {
 	int		i;

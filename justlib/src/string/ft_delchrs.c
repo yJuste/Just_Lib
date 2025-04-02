@@ -13,7 +13,7 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-// Returns a new str.
+// ⚠️  Returns a new str.
 char	*ft_delchrs(char *s, const char *chrs)
 {
 	int			i;
