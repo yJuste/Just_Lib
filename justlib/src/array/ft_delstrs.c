@@ -13,9 +13,15 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-// Comme on touch seulement au sous-tableaux, on peut ne passer que char **.
-// Permet ainsi de vérifier si arg est NULL à la sortie.
-int	ft_delstrs(char **arg, const char *strs)
+/*
+ * Voici les flags que tu peux mettre:
+ *
+ * JT_START		   :> continue tant que c'est 'vrai', sinon quitte.
+ * JT_REVERT (en cours)	   :> inverse le fonctionnement de la fonction.
+ */
+
+// Supprime les tableaux donnés en argument.
+int	ft_delstrs(char **arg, const char *strs, const char *flag)
 {
 	int		i;
 
@@ -30,6 +36,11 @@ int	ft_delstrs(char **arg, const char *strs)
 			if (!arg)
 				return (1);
 			continue ;
+		}
+		else
+		{
+			if (ft_strcmp(flag, "JT_START") == 0)
+				break ;
 		}
 		i++;
 	}

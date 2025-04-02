@@ -75,7 +75,7 @@ char		*ft_strjoin(const char *s1, const char *s2);
 int			ft_strslen(const char **s);
 
 char		**ft_strsdup(const char **s);
-int			ft_delstrs(char **arg, const char *strs);
+int			ft_delstrs(char **arg, const char *strs, const char *flag);
 char		**ft_strscpy(char **dst, const char **src);
 
 // look for a the 'n'nth string.
@@ -90,7 +90,7 @@ void		ft_strs_push(char ***arg, char *line);
 
 char		**ft_split(const char *s, const char *sep);
 
-void		ft_print_args(const char *title, const char **arg);
+void		ft_print_args(const char *title, char **arg);
 
 /* Allocates or frees.
  *	------------- ALLOCATION -------------

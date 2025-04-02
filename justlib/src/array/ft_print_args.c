@@ -13,15 +13,15 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-void	ft_print_args(const char *title, const char **arg)
+void	ft_print_args(const char *title, char **arg)
 {
 	int		i;
 
 	i = 0;
-	printf("%s", title);
+	printf("--- %s---\n", title);
 	while (arg[i])
 	{
-		printf("arg[%d] = %sEOL\n", i, arg[i]);
+		printf("arg[%d] = \"%s\"\n", i, arg[i]);
 		i++;
 	}
 	printf("--- EOF ---\n");
