@@ -63,7 +63,7 @@ YELLOW			= "\033[33m"	# Yellow
 OBJ = $(SRC:%.c=$(OBJ_DIR)/%.o)
 
 all: credit $(NAME)
-	@echo $(GREEN)"--- 📍 La justlib has been created. 📍 ---"$(RESET)
+	@echo $(GREEN)"--- 🎊 La justlib has been created. 🎊 ---"$(RESET)
 
 $(NAME): $(OBJ)
 	@ar -rcs $(NAME) $(OBJ)
@@ -73,6 +73,7 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
+	@echo $(RED)"--- 📍 La justlib has been deleted. 📍 ---"$(RESET)
 
 re: fclean all
 

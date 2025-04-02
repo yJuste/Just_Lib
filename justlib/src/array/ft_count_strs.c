@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_delstrs.c                                       :+:      :+:    :+:   */
+/*   ft_count_strs.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -9,28 +9,19 @@
 /*   Updated:   by Just'                              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*   • Deletes the specified strs from an array.                              */
+/*   • Counts every given strings.                                            */
 /* ************************************************************************** */
 #include "justlib.h"
 
-// Supprime les tableaux donnés en argument.
-int	ft_delstrs(char **arg, const char *strs)
+int	ft_count_strs(const char **s, const char *str)
 {
-	int		i;
+	int			i;
+	int			j;
 
 	i = 0;
-	if (!arg)
-		return (1);
-	while (arg[i])
-	{
-		if (ft_strcmp(arg[i], strs) == 0)
-		{
-			arg = ft_shift(arg, i, 1);
-			if (!arg)
-				return (1);
-			continue ;
-		}
-		i++;
-	}
-	return (0);
+	j = 0;
+	while (s[i])
+		if (ft_strcmp(s[i++], str) == 0)
+			j++;
+	return (j);
 }
