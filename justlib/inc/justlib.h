@@ -90,7 +90,7 @@ void		ft_strs_push(char ***arg, char *line);
 
 char		**ft_split(const char *s, const char *sep);
 
-void		ft_print_args(char *title, char **arg);
+void		ft_print_args(const char *title, const char **arg);
 
 /* Allocates or frees.
  *	------------- ALLOCATION -------------

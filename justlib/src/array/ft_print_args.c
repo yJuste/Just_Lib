@@ -13,7 +13,7 @@
 /* ************************************************************************** */
 #include "justlib.h"
 
-void	ft_print_args(char *title, char **arg)
+void	ft_print_args(const char *title, const char **arg)
 {
 	int		i;
 
