@@ -32,15 +32,23 @@ typedef struct s_list
 	t_list		*next;
 }	t_list;
 
-/*
- *	JUSTLIB
+/*	.-----------------------------------------------.
+ *	|						|
+ *	|		 🎉  JUSTLIB  🎉		|
+ *	|						|
+ *	.-----------------------------------------------.
+ *					made by Juste.
  */
 
-//	-------------- IS / TO ---------------
+/* Fonction starting with is... or to...
+ *	-------------- IS / TO ---------------
+ */
 
 int			ft_is_separator(char c, const char *sep);
 
-//	-------------- ARRAYS ----------------
+/* Manipulates strings.
+ *	-------------- STRING ----------------
+ */
 
 int			ft_strlen(const char *s);
 int			ft_count_chr(const char *s, const char *chrs);
@@ -58,10 +66,11 @@ int			ft_next_chr(const char *s, const char chr, int n);
 int			ft_strcmp(const char *s1, const char *s2);
 int			ft_strncmp(const char *s1, const char *s2, int n);
 
-char		**ft_split(const char *s, const char *sep);
 char		*ft_strjoin(const char *s1, const char *s2);
 
-//	----------- DOUBLE ARRAYS ------------
+/* Manipulates arrays.
+ *	---------------- ARRAY ---------------
+ */
 
 int			ft_strslen(const char **s);
 
@@ -79,9 +88,13 @@ char		**ft_shift(char **arg, int src, int range);
 // add string at arg.
 void		ft_strs_push(char ***arg, char *line);
 
+char		**ft_split(const char *s, const char *sep);
+
 void		ft_print_args(char *title, char **arg);
 
-//	------------- ALLOCATION -------------
+/* Allocates or frees.
+ *	------------- ALLOCATION -------------
+ */
 
 void		*ft_calloc(int count, int size);
 void		*ft_realloc(void *ptr, int old, int new);
@@ -89,22 +102,26 @@ void		*ft_realloc(void *ptr, int old, int new);
 void		ft_free_array(void ***arr, int len, char char_or_int);
 void		ft_free(char **s1, char **s2, char **s3, char ***strs);
 
-//	------------- CONVERSION -------------
+/* Converts from 1 type to another.
+ *	------------- CONVERSION -------------
+ */
 
 int			ft_atoi(const char *s);
 char		*ft_itoa(int n);
 
-//	--------------- MATHS ----------------
+/* Manipulates numbers.
+ *	--------------- MATHS ----------------
+ */
 
-//	--------------- BASE -----------------
-
-//	-------------- MEMORY ----------------
+/* Manipulates pointers. (usually returning void *)
+ *	-------------- MEMORY ----------------
+ */
 
 void		*ft_memcpy(void *dst, const void *src, int n);
 
-//	----------- FILE DESCRIPTOR ----------
-
-//	---------- LISTES CHAINEES -----------
+/* Manipulates linked lists.
+ *	---------- LISTES CHAINEES -----------
+ */
 
 t_list		*ft_lstnew(void *content);
 void		ft_lstadd_front(t_list **lst, t_list *new);

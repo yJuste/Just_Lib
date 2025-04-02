@@ -8,50 +8,49 @@ CFLAGS = -Wall -Wextra -Werror
 SRC_DIR = src
 INC_DIR = inc
 OBJ_DIR = obj
-GNL_DIR = get_next_line
 
 # Files
-SRC =	ft_is_separator.c		\
-	ft_strlen.c			\
-	ft_count_chr.c			\
-	ft_strdup.c			\
-	ft_delchrs.c			\
-	ft_strcpy.c			\
-	ft_strncpy.c			\
-	ft_strchr.c			\
-	ft_strrchr.c			\
-	ft_next_chr.c			\
-	ft_strcmp.c			\
-	ft_strncmp.c			\
-	ft_split.c			\
-	ft_strjoin.c			\
-	ft_strslen.c			\
-	ft_strsdup.c			\
-	ft_delstrs.c			\
-	ft_strscpy.c			\
-	ft_next_str.c			\
-	ft_interversion.c		\
-	ft_shift.c			\
-	ft_strs_push.c			\
-	ft_print_args.c			\
-	ft_calloc.c			\
-	ft_realloc.c			\
-	ft_free_array.c			\
-	ft_free.c			\
-	ft_atoi.c			\
-	ft_itoa.c			\
-	ft_memcpy.c			\
-	lst/ft_lstnew.c			\
-	lst/ft_lstadd_front.c		\
-	lst/ft_lstadd_back.c		\
-	lst/ft_lstsize.c		\
-	lst/ft_lstlast.c		\
-	lst/ft_lstiter.c		\
-	lst/ft_lstmap.c			\
-	lst/ft_lstprint.c		\
-	lst/ft_lstclear.c		\
-	lst/ft_lstdelone.c		\
-	$(GNL_DIR)/get_next_line.c	\
+SRC =	is_to/ft_is_separator.c			\
+	string/ft_strlen.c			\
+	string/ft_count_chr.c			\
+	string/ft_strdup.c			\
+	string/ft_delchrs.c			\
+	string/ft_strcpy.c			\
+	string/ft_strncpy.c			\
+	string/ft_strchr.c			\
+	string/ft_strrchr.c			\
+	string/ft_next_chr.c			\
+	string/ft_strcmp.c			\
+	string/ft_strncmp.c			\
+	string/ft_strjoin.c			\
+	array/ft_strslen.c			\
+	array/ft_strsdup.c			\
+	array/ft_delstrs.c			\
+	array/ft_strscpy.c			\
+	array/ft_next_str.c			\
+	array/ft_interversion.c			\
+	array/ft_shift.c			\
+	array/ft_strs_push.c			\
+	array/ft_split.c			\
+	array/ft_print_args.c			\
+	allocation/ft_calloc.c			\
+	allocation/ft_realloc.c			\
+	allocation/ft_free_array.c		\
+	allocation/ft_free.c			\
+	conversion/ft_atoi.c			\
+	conversion/ft_itoa.c			\
+	memory/ft_memcpy.c			\
+	lst/ft_lstnew.c				\
+	lst/ft_lstadd_front.c			\
+	lst/ft_lstadd_back.c			\
+	lst/ft_lstsize.c			\
+	lst/ft_lstlast.c			\
+	lst/ft_lstiter.c			\
+	lst/ft_lstmap.c				\
+	lst/ft_lstprint.c			\
+	lst/ft_lstclear.c			\
+	lst/ft_lstdelone.c			\
+	get_next_line/get_next_line.c
 
 # Colors
 RESET			= "\033[0m"
@@ -92,7 +91,7 @@ credit:
 	@echo "|   dans le futur, merci. 😁                              |"
 	@echo "|                                                         |"
 	@echo "| EOF:                                                    |"
-	@echo "| Dernière modification le 1 Avril 2025 par Juste.        |"
+	@echo "| Dernière modification le 2 Avril 2025 par Juste.        |"
 	@echo ".---------------------------------------------------------."
 	@echo $(RESET)
 rf: re
