@@ -19,6 +19,8 @@ SRC =	is_to/ft_is_separator.c			\
 	string/ft_strncpy.c			\
 	string/ft_strchr.c			\
 	string/ft_strrchr.c			\
+	string/ft_strstr.c			\
+	string/ft_strrstr.c			\
 	string/ft_next_chr.c			\
 	string/ft_strcmp.c			\
 	string/ft_strncmp.c			\

@@ -54,14 +54,14 @@ int			ft_strlen(const char *s);
 int			ft_count_chr(const char *s, const char *chrs);
 
 char		*ft_strdup(const char *s);
-// deletes specified chars from a string.
 char		*ft_delchrs(char *s, const char *chrs);
 char		*ft_strcpy(char *dst, const char *src);
 char		*ft_strncpy(char *dst, const char *src, int n);
 
 char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
-// look for the next chr in the string.
+char		*ft_strstr(const char *haystack, const char *needle);
+char		*ft_strrstr(const char *haystack, const char *needle);
 int			ft_next_chr(const char *s, const char chr, int n);
 int			ft_strcmp(const char *s1, const char *s2);
 int			ft_strncmp(const char *s1, const char *s2, int n);
@@ -79,14 +79,10 @@ char		**ft_strsdup(const char **s);
 int			ft_delstrs(char **arg, const char *strs);
 char		**ft_strscpy(char **dst, const char **src);
 
-// look for a the 'n'nth string.
 int			ft_next_str(const char **arg, const char *to_look, int n);
 
-// intervert 'range'nth strings at src with the dst.
 int			ft_interversion(char **arg, int src, int dst, int range);
-// deletes 'range'nth strings at src.
 char		**ft_shift(char **arg, int src, int range);
-// add string at arg.
 void		ft_strs_push(char ***arg, char *line);
 
 char		**ft_split(const char *s, const char *sep);
