@@ -21,7 +21,7 @@ void	ft_print_args(const char *title, char **arg)
 	printf("--- %s ---\n", title);
 	if (!arg)
 		printf("attention arg n'existe pas!\n");
-	if (!arg[i])
+	else if (!arg[i])
 		printf("attention arg[0] n'existe pas!\n");
 	else
 	{
