@@ -19,10 +19,17 @@ void	ft_print_args(const char *title, char **arg)
 
 	i = 0;
 	printf("--- %s ---\n", title);
-	while (arg[i])
+	if (!arg)
+		printf("attention arg n'existe pas!\n");
+	if (!arg[i])
+		printf("attention arg[0] n'existe pas!\n");
+	else
 	{
-		printf("arg[%d] = \"%s\"\n", i, arg[i]);
-		i++;
+		while (arg[i])
+		{
+			printf("arg[%d] = \"%s\"\n", i, arg[i]);
+			i++;
+		}
 	}
 	printf("--- EOF ---\n");
 }
