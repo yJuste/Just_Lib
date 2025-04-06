@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrstr.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:                                            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -9,32 +9,30 @@
 /*   Updated:   by Just'                              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*   • Finds the last occurence of a string.                                  */
+/*   • Concates 2 str.                                                        */
 /* ************************************************************************** */
 #include "justlib.h"
 
-char	*ft_strrstr(const char *haystack, const char *needle)
+char	**ft_strsjoin(const char **s1, const char **s2)
 {
 	int			i;
 	int			j;
-	char		*last;
+	char		**str;
 
-	last = NULL;
-	if (!*needle)
-	{
-		while (*haystack)
-			haystack++;
-		return ((char *)haystack);
-	}
+	if (!s1 || !s2)
+		return (NULL);
+	str = ft_calloc(ft_strslen(s1) + ft_strslen(s2) + 1, sizeof(char *));
+	if (!str)
+		return (NULL);
 	i = 0;
-	while (haystack[i])
+	while (s1[i])
 	{
-		j = 0;
-		while (haystack[i + j] == needle[j] && needle[j])
-			j++;
-		if (!needle[j])
-			last = (char *)(haystack + i);
+		str[i] = ft_strdup(s1[i]);
 		i++;
 	}
-	return (last);
+	j = 0;
+	while (s2[j])
+		str[i++] = ft_strdup(s2[j++]);
+	str[i] = NULL;
+	return (str);
 }

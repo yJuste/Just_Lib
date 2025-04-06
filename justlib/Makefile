@@ -34,6 +34,7 @@ SRC =	is_to/ft_is_separator.c			\
 	array/ft_shift.c			\
 	array/ft_strs_push.c			\
 	array/ft_split.c			\
+	array/ft_strsjoin.c			\
 	array/ft_print_args.c			\
 	allocation/ft_calloc.c			\
 	allocation/ft_realloc.c			\

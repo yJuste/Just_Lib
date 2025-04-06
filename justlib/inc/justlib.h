@@ -61,8 +61,7 @@ char		*ft_strncpy(char *dst, const char *src, int n);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(const char *haystack, const char *needle);
-char		*ft_strrstr(const char *haystack, const char *needle,
-				int delimiter);
+char		*ft_strrstr(const char *haystack, const char *needle);
 int			ft_next_chr(const char *s, const char chr, int n);
 int			ft_strcmp(const char *s1, const char *s2);
 int			ft_strncmp(const char *s1, const char *s2, int n);
@@ -87,6 +86,7 @@ char		**ft_shift(char **arg, int src, int range);
 void		ft_strs_push(char ***arg, char *line);
 
 char		**ft_split(const char *s, const char *sep);
+char		**ft_strsjoin(const char **s1, const char **s2);
 
 void		ft_print_args(const char *title, char **arg);
 
