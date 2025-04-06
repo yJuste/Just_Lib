@@ -57,6 +57,7 @@ char		*ft_strdup(const char *s);
 char		*ft_delchrs(char *s, const char *chrs);
 char		*ft_strcpy(char *dst, const char *src);
 char		*ft_strncpy(char *dst, const char *src, int n);
+char		*ft_replace_chr(char *s, char c, int src, int range);
 
 char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);

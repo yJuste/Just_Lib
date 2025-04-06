@@ -17,6 +17,7 @@ SRC =	is_to/ft_is_separator.c			\
 	string/ft_delchrs.c			\
 	string/ft_strcpy.c			\
 	string/ft_strncpy.c			\
+	string/ft_replace_chr.c			\
 	string/ft_strchr.c			\
 	string/ft_strrchr.c			\
 	string/ft_strstr.c			\
