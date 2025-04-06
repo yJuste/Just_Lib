@@ -63,5 +63,3 @@ ex (pour ft_split): "CHAR ** ( char *, char * )"
 Et Don't Panic!
 
 Modifié le 18 Novembre 2024 par Juste.
-
-Merci à Lucas pour le ft_convert_base
